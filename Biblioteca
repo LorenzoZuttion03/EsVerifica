@@ -44,4 +44,8 @@ class Libro
                 _numeroPagine = value;
             }
         }
+         public override string  ToString()
+        {
+            return Autore + "-" + Isbn + "-" + NumeroPagine ;
+        }
     }
