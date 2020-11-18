@@ -1,0 +1,47 @@
+class Libro
+    {
+
+        //campi classe
+        private string _autore;
+        private string _isbn;
+        private int _numeroPagine;
+        //Proprietà
+        public string Autore
+        {
+            get { return _autore;  }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new Exception("Autore non valido");
+
+
+                }
+                _autore = value;
+            }
+        }
+        public string Isbn
+        {
+            get { return _isbn; }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new Exception("L'Isbn del librfo non valido");
+                }
+                _isbn = value;
+            }
+        }
+        public int NumeroPagine
+        {
+            get { return _numeroPagine; }
+            set
+            {
+                if(value <= 0)
+                {
+                    throw new Exception("Numero delle pagine non valido");
+                }
+                _numeroPagine = value;
+            }
+        }
+    }
