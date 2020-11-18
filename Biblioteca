@@ -1,5 +1,6 @@
 class Libro
     {
+                }
 
         //campi classe
         private string _autore;
